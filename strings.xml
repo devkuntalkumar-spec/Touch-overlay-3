@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Touch Overlay</string>
+    <string name="editor_title">Layout Editor</string>
+
+    <string name="intro_text">Touch Overlay draws a customizable floating controller (a joystick and buttons A–D) on top of any other app. Complete the two permission steps below, arrange your layout in the editor, then start the overlay.</string>
+
+    <string name="overlay_permission_title">1. Display over other apps</string>
+    <string name="overlay_permission_explanation">This permission lets Touch Overlay draw the floating joystick and buttons on top of whatever app you have open, so the controller stays visible while you use another app or game.</string>
+    <string name="grant_overlay_permission">Grant overlay permission</string>
+
+    <string name="accessibility_title">2. Accessibility service (optional, for input)</string>
+    <string name="accessibility_explanation">Android does not allow an app to inject touches into other apps directly. To let the overlay\'s buttons and joystick actually send a tap or drag to the app underneath, enable the "Touch Overlay" accessibility service. Without it, the overlay will still display and move, but pressing a control will only show local feedback and a reminder to enable this service. To enable it: Settings → Accessibility → Touch Overlay → turn it on. Tap the button below to jump straight to that screen.</string>
+    <string name="enable_accessibility">Open accessibility settings</string>
+
+    <string name="open_editor">Open layout editor</string>
+    <string name="start_overlay">Start overlay</string>
+    <string name="stop_overlay">Stop overlay</string>
+
+    <string name="status_granted">Status: granted</string>
+    <string name="status_not_granted">Status: not granted</string>
+
+    <string name="limitations_note">Note: on-screen gesture injection relies on Android\'s public AccessibilityService gesture APIs. It works for standard taps and drags, but Android does not allow any app to hold a true continuous "finger down" state or to inject input into apps that block accessibility interaction (e.g. some secured banking or DRM-protected screens). This is a platform security restriction, not a bug.</string>
+
+    <string name="notification_channel_name">Touch Overlay Service</string>
+    <string name="notification_text">The floating controller is active</string>
+
+    <string name="cd_move_panel">Drag to move control panel</string>
+    <string name="cd_open_editor">Open layout editor</string>
+    <string name="cd_stop_overlay">Stop overlay</string>
+
+    <string name="edit_mode_hint">Edit mode: drag to reposition, release to save</string>
+    <string name="accessibility_not_enabled_warning">Enable the Touch Overlay accessibility service to send input to the app below</string>
+
+    <string name="accessibility_service_label">Touch Overlay</string>
+    <string name="accessibility_service_description">Allows Touch Overlay\'s floating buttons and joystick to send tap and drag gestures to the app currently on screen. It does not read screen content.</string>
+
+    <string name="size_label">Size</string>
+    <string name="opacity_label">Opacity</string>
+    <string name="delete_control">Delete control</string>
+    <string name="save_layout">Save</string>
+    <string name="reset_layout">Reset</string>
+    <string name="add_control_title">Add control</string>
+    <string name="all_buttons_added">All four buttons are already on the layout</string>
+    <string name="cannot_delete_joystick">The joystick can\'t be removed, only repositioned or resized</string>
+    <string name="layout_saved">Layout saved</string>
+    <string name="layout_reset">Layout reset to defaults</string>
+    <string name="editing_control">Editing: %1$s</string>
+    <string name="joystick_short_label">JOY</string>
+</resources>
